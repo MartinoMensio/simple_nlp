@@ -52,6 +52,15 @@
       ]
     },
     {
+      "text" : "Hi there. I need a bike",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"search_bike\""
+        }
+      ]
+    },
+    {
       "text" : "I am at piazza castello torino",
       "entities" : [
         {
@@ -122,6 +131,31 @@
     },
     {
       "text" : "I want a bike",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"search_bike\""
+        }
+      ]
+    },
+    {
+      "text" : "I want to go to Torino esposizioni",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"plan_trip\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"Torino esposizioni\"",
+          "role" : "to",
+          "start" : 16,
+          "end" : 34
+        }
+      ]
+    },
+    {
+      "text" : "a bike",
       "entities" : [
         {
           "entity" : "intent",
@@ -405,6 +439,22 @@
       ]
     },
     {
+      "text" : "how can I reach piazza vittorio veneto torino?",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"plan_trip\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"piazza vittorio veneto torino\"",
+          "role" : "to",
+          "start" : 16,
+          "end" : 45
+        }
+      ]
+    },
+    {
       "text" : "how can i reach corso inghilterra from piazza bengasi?",
       "entities" : [
         {
@@ -489,6 +539,21 @@
       ]
     },
     {
+      "text" : "i am at pagno",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"set_position\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"pagno\"",
+          "start" : 8,
+          "end" : 13
+        }
+      ]
+    },
+    {
       "text" : "i am at piazza castello torino",
       "entities" : [
         {
@@ -519,6 +584,21 @@
       ]
     },
     {
+      "text" : "i am at piazza vittorio veneto torino",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"set_position\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"piazza vittorio veneto torino\"",
+          "start" : 8,
+          "end" : 37
+        }
+      ]
+    },
+    {
       "text" : "i am at politecnico di torino",
       "entities" : [
         {
@@ -530,6 +610,21 @@
           "value" : "\"politecnico di torino\"",
           "start" : 8,
           "end" : 29
+        }
+      ]
+    },
+    {
+      "text" : "i am at porta palazzo torino",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"set_position\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"porta palazzo torino\"",
+          "start" : 8,
+          "end" : 28
         }
       ]
     },
@@ -575,6 +670,21 @@
           "value" : "\"via borsellino torino\"",
           "start" : 8,
           "end" : 29
+        }
+      ]
+    },
+    {
+      "text" : "i am at via paolo borsellino 38 torino",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"set_position\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"via paolo borsellino 38 torino\"",
+          "start" : 8,
+          "end" : 38
         }
       ]
     },
@@ -635,6 +745,21 @@
           "value" : "\"piazza sabotino torino\"",
           "start" : 8,
           "end" : 30
+        }
+      ]
+    },
+    {
+      "text" : "i am in piazza vittorio veneto torino",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"set_position\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"piazza vittorio veneto torino\"",
+          "start" : 8,
+          "end" : 37
         }
       ]
     },
@@ -1123,9 +1248,13 @@
       "text" : "i want a bike near piazza castello",
       "entities" : [
         {
+          "entity" : "intent",
+          "value" : "\"search_bike\""
+        },
+        {
           "entity" : "location",
-          "value" : "\" piazza castello\"",
-          "start" : 18,
+          "value" : "\"piazza castello\"",
+          "start" : 19,
           "end" : 34
         }
       ]
@@ -1163,6 +1292,10 @@
     {
       "text" : "i want an empty slot in the city center",
       "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"search_slot\""
+        },
         {
           "entity" : "location",
           "value" : "\"city center\"",
@@ -1655,6 +1788,22 @@
         {
           "entity" : "intent",
           "value" : "\"search_bike\""
+        }
+      ]
+    },
+    {
+      "text" : "want to go to via delle rosine 3 torino",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"plan_trip\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"via delle rosine 3 torino\"",
+          "role" : "to",
+          "start" : 14,
+          "end" : 39
         }
       ]
     },

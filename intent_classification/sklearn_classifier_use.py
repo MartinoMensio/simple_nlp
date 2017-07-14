@@ -1,7 +1,7 @@
 import sys
 import pickle
 from sklearn.base import TransformerMixin
-from sklearn.feature_extraction.stop_words import ENGLISH_STOP_WORDS as stopwords 
+from sklearn.feature_extraction.stop_words import ENGLISH_STOP_WORDS as stopwords
 
 
 import string
@@ -38,6 +38,7 @@ def spacy_tokenizer(sentence):
 with open('classifier_pipe.dump', 'rb') as f:
     pipe = pickle.load(f)
 
+print(pipe.classes_)
 for line in sys.stdin:
-    pred_data = pipe.predict([line]) 
+    pred_data = pipe.predict_proba([line]) 
     print(pred_data)

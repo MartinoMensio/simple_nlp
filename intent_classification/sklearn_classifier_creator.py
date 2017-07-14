@@ -4,6 +4,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.base import TransformerMixin 
 from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
+from sklearn.calibration import CalibratedClassifierCV
 
 # for saving the model
 import pickle
@@ -39,7 +40,8 @@ def spacy_tokenizer(sentence):
 
 #create vectorizer object to generate feature vectors, we will use custom spacy’s tokenizer
 vectorizer = CountVectorizer(tokenizer = spacy_tokenizer, ngram_range=(1,1))
-classifier = LinearSVC()
+svm = LinearSVC()
+classifier = CalibratedClassifierCV(svm)
 
 # Create the  pipeline to clean, tokenize, vectorize, and classify 
 pipe = Pipeline([("cleaner", predictors()),
